@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Open Activity From Url</title>
+</head>
+<body>
+open activity from url
+<ul>
+    <li>
+        <a href="intent://app/#Intent;scheme=jingtuo;package=com.jingtuo.android.app;S.browser_fallback_url=http://www.baidu.com;end">
+            方案一
+        </a>
+        <ul>
+            <li>WebView不可用,除非对地址做拦截(未进行拦截验证)</li>
+            <li>Chrome--通过</li>
+            <li>小米浏览器--通过</li>
+            <li>搜狗浏览器--通过</li>
+            <li>QQ浏览器--通过</li>
+            <li>火狐浏览器--通过</li>
+            <li>手机百度--通过</li>
+            <li>百度浏览器--未通过</li>
+            <li>UC浏览器--未通过,有弹框提示,点击允许打开仍然未通过</li>
+            <li>欧朋浏览器--通过</li>
+            <li>猎豹浏览器--通过</li>
+            <li>360浏览器--通过</li>
+            <li>华为手机浏览器--取决于上述其他浏览器</li>
+        </ul>
+    </li>
+    <li>
+        <a href="http://app.jingtuo.android.com">
+            方案二
+        </a>
+        <ul>
+            <li>Chrome--通过,但是因为scheme是http,会有弹框选择用哪个浏览器打开</li>
+            <li>小米浏览器--</li>
+            <li>搜狗浏览器--未通过</li>
+            <li>QQ浏览器--未通过</li>
+            <li>火狐浏览器--未通过</li>
+            <li>手机百度--</li>
+            <li>百度浏览器--未通过</li>
+            <li>UC浏览器--未通过</li>
+            <li>欧朋浏览器--未通过</li>
+            <li>猎豹浏览器--未通过</li>
+            <li>360浏览器--未通过</li>
+            <li>华为手机浏览器--取决于上述其他浏览器</li>
+        </ul>
+    </li>
+
+    <a href="jingtuo://app/third">
+        方案三
+    </a>
+    <ul>
+        <li>Chrome--通过</li>
+        <li>小米浏览器--</li>
+        <li>搜狗浏览器--通过</li>
+        <li>QQ浏览器--通过</li>
+        <li>火狐浏览器--通过</li>
+        <li>手机百度--</li>
+        <li>百度浏览器--未通过</li>
+        <li>UC浏览器--通过,有弹框提示,点击允许打开可通过</li>
+        <li>欧朋浏览器--通过</li>
+        <li>猎豹浏览器--通过</li>
+        <li>360浏览器--通过</li>
+        <li>华为手机浏览器--取决于上述其他浏览器</li>
+    </ul>
+    </li>
+
+</ul>
+</body>
+</html>
